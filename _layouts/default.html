@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
 </head>
 <body>
-{{ content }}
-{% include footer.html %}
-{% include scripts-bottom.html %}
+    {% include nav_2.html %}
+    {{ content }}
+    {% include footer.html %}
+    {% include scripts-bottom.html %}
 </body>
 </html>

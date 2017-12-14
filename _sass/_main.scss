@@ -1,3 +1,237 @@
 @import
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+@import url('https://fonts.googleapis.com/css?family=League+Script');
+@import url('https://fonts.googleapis.com/css?family=Cagliostro');
+
+/* navigatie */
+
+.nav-link {
+  padding-right: 70px;
+  color: #908F8F;
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #070303;
+}
+
+.nav-link-2 {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.facebook {
+  width: 20px;
+  margin-left: 300px;
+}
+
+.instagram {
+  width: 17px;
+}
+
+.twitter {
+  width: 20px;
+}
+
+/* homepagina */
+
+.jumbotron {
+  padding-bottom: 20px;
+  border-bottom: thick;
+  margin-bottom: 0;
+  background-color: #F5F5F5;
+}
+
+.display-3 {
+  font-family: 'League Script', 'sans-serif';
+}
+
+.homepage {
+  text-align: center;
+}
+
+/* home afbeelding bed */
+
+.contain {
+  position: relative;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.home_bed {
+  margin: 0;
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle_bed {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.contain:hover .home_bed {
+  opacity: 0.3;
+}
+
+.contain:hover .middle_bed {
+  opacity: 1;
+}
+
+.text {
+  background-color: #9AD3CC;
+  color: white;
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 20px;
+  padding: 16px 32px;
+  border-radius: 2px;
+}
+
+/* home afbeelding kalender */
+
+.home_kalender {
+  margin: 0;
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle_kalender {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.contain:hover .home_kalender {
+  opacity: 0.3;
+}
+
+.contain:hover .middle_kalender {
+  opacity: 1;
+}
+
+/* home afbeelding ontbijt */
+
+.home_ontbijt {
+  margin: 0;
+  width: 95%;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle_ontbijt {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.contain:hover .home_ontbijt {
+  opacity: 0.3;
+}
+
+.contain:hover .middle_ontbijt {
+  opacity: 1;
+}
+
+/* Over ons pagina */
+
+.normal_text {
+  margin-top: 40px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+}
+
+.normal_img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.img_text {
+  margin-bottom: 70px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+  text-align: center;
+}
+
+.maintitle {
+  font-size: 3em;
+  font-family: 'League Script', 'sans-serif';
+  margin-bottom: 20px;
+  color: #908F8F;
+}
+
+#yentl {
+  border-radius: 1px;
+  width: 100%;
+}
+
+#fien {
+  width: 100%;
+}
+
+/* pagina kamer */
+
+.normal_text_kamer {
+  margin-top: 40px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+  text-align: center;
+}
+
+.appartement_img {
+  width: 100%;
+}
+
+.img_text_kamer {
+  margin-bottom: 40px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+  text-align: center;
+}
+
+/* disclaimer */
+
+#normal_text_disclaimer {
+  margin-bottom: 70px;
+  margin-top: 40px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+}
+
+/* voorwaarden */
+
+
+
+/* footer */
+
+.footer {
+  color: #908F8F;
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 18px;
+}
+
+.footer:hover {
+  color: #070303;
+}

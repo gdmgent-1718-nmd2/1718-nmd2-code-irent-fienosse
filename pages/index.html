@@ -3,11 +3,37 @@ layout   : default
 permalink: /
 # Custom Page Variables
 # ─────────────────────
-title: Bootstrap 4 &mdash; Voorbeeld
+title: De Kotmadam
 ---
-<div class="jumbotron">
-    <h1 class="display-3">{{ page.title }}</h1>
+<div class="contain">
+    <img class="home_bed" src="{{ 'assets/images/home_bed.jpg' | relative_url }}">
+    <div class="middle_bed">
+        <div class="text">BOEK NU!<br>
+        vanaf €19,95 
+        </div>
+    </div>
 </div>
-<div class="container">
-    <a class="btn btn-primary" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4 documentation</a>
+<div class="container homepage">
+    <div class="row">
+        <div class="col-6">
+            <div class="contain">
+                <img class="home_kalender" src="{{ 'assets/images/home_kalender.png' | relative_url }}">
+                <div class="middle_kalender">
+                    <div class="text">Krijg 10% korting<br>
+                    op maandag 
+                    </div>
+                </div>
+            </div>             
+        </div>
+        <div class="col-6">
+            <div class="contain">
+                <img class="home_ontbijt" src="{{ 'assets/images/home_ontbijt.jpg' | relative_url }}">
+                <div class="middle_ontbijt">
+                    <div class="text">ONTBIJT OP BED<br>
+                    slechts €7 
+                    </div>
+                </div>
+            </div>               
+        </div>
+    </div>
 </div>

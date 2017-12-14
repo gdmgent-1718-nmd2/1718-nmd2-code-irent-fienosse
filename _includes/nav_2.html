@@ -1,0 +1,47 @@
+<div class="jumbotron">
+    <h1 class="display-3">{{ page.title }}</h1>
+</div>
+<nav class="navbar navbar-expand-lg navbar-#F5F5F5 bg-white">
+  <!-- websitelogo -->
+  <a class="navbar-brand nav-link" href="{{ 'index.html' | absolute_url }}">Home</a>
+  <a class="navbar-brand nav-link" href="{{ 'pages/overons.html' | absolute_url }}">Over Ons</a>
+  <a class="navbar-brand nav-link" href="{{ 'pages/kamer.html' | absolute_url }}">Kamer</a>
+  <a class="navbar-brand nav-link" href="{{ 'pages/extraopties.html' | absolute_url }}">Extra Opties</a>
+  <a class="navbar-brand nav-link" href="{{ 'pages/reserveren.html' | absolute_url }}">Reserveren</a>
+  <a class="navbar-brand nav-link" href="{{ 'pages/contact.html' | absolute_url }}">Contact</a>
+  <a class="navbar-brand nav-link-2" href="www.facebook.com"><img class="facebook" src="{{ 'assets/images/facebook.png' | absolute_url }}"></a>
+  <a class="navbar-brand nav-link-2" href="{{ 'www.twitter.com' | absolute_url }}"><img class="twitter" src="{{ 'assets/images/twitter.png' | relative_url }}"></a>
+  <a class="navbar-brand nav-link-2" href="{{ 'www.instagram.com' | absolute_url }}"><img class="instagram" src="{{ 'assets/images/instagram.png' | relative_url }}"></a>
+
+
+  <!-- hoofdnavigatie -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        {% assign links = site.data.navigation %}
+        {% for link in links %}
+            {% assign class = nil %}
+            {% if link.url contains page.url %}
+                {% assign class = ' active' %}
+            {% endif %}
+            {{ page.url | inspect}}
+            {{ link.url | inspect}}
+            {% if link.sublinks %}
+                <li class="nav-item dropdown {{ class }}">
+                    <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle {{ class }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {% for sublink in link.sublinks %}
+                                <li class="dropdown-item">
+                                    <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ sublink.url }}"></a>
+                                </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li class="nav-item{{ class }}">
+                    <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+  </div>
+</nav>
