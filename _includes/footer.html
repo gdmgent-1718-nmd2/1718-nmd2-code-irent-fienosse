@@ -1,13 +1,20 @@
 <footer class="bd-footer navbar-light bg-light text-muted">
     <div class="container">
         <div class="row">
-            <div class="col-6 text_footer">
-                <a href="{{ site.baseurl }}{% link pages/disclaimer.html %}" class="footer">Disclaimer</a>
+            <div class="col-4" id="footer">
+                <a href="{{ site.baseurl }}{% link pages/disclaimer.html %}">Disclaimer</a>
                 <br>
-                <a href="{{ site.baseurl }}{% link pages/voorwaarden.html %}" class="footer">Voorwaarden</a>
+                <a href="{{ site.baseurl }}{% link pages/voorwaarden.html %}">Voorwaarden</a>
             </div>
-            <div class="col-6">
-                <p class="text_footer">Designed and built <br>by
+            <div class="col-4" id="footer_location">
+                <img id="icon_location" src="{{ 'assets/images/locatie.png' | relative_url }}">
+                <br>
+                <br>
+                <p>Industrieweg 232, 
+                <br>9030 GENT</p>
+            </div>
+            <div class="col-4">
+                <p id="footer_design">Designed and built <br>by
                     <a href="https://facebook.com/fienosselaer" target="_blank" rel="noopener">Fien Osselaer
                 </p>
             </div>

@@ -269,20 +269,37 @@ header {
 
 /* footer */
 
-.text_footer {
+#footer_design {
   float: right;
   font-family: 'Cagliostro', 'sans-serif';
-  padding: 40px;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: right;  
 }
 
-.footer {
+#footer_location {
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#footer {
   color: #908F8F;
   font-family: 'Cagliostro', 'sans-serif';
   font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   float: none;
 }
 
-.footer:hover {
+#footer:hover {
   color: #070303;
   text-decoration: none;
+}
+
+#icon_location {
+  width: 8%;
 }
