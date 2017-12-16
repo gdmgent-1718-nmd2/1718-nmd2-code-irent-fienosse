@@ -220,16 +220,110 @@ header {
   text-align: center;
 }
 
+/* pagina reserveren */
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #9AD3CC;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #9AD3CC;
+    color: white !important
+}
+
+.reserveren {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+#text_reserveren {
+  text-align: center;
+  color: #908F8F;
+  font-family: 'Cagliostro', sans-serif;
+  margin-bottom: 40px;
+}
+
+#balk_gereserveerd {
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+  background: #9AD3CC;
+  font-family: 'Cagliostro', sans-serif;
+  padding: 100px 50px;
+}
+
 /* pagina contact */
 
 #contact_layout {
-  padding: 30px 30px;
+  padding: 50px 50px;
   color: white;
   font-family: 'Cagliostro', sans-serif;
   line-height: 1.5;
   margin-top: 70px;
   margin-bottom: 100px;
   text-align: center;
+  background-image: url(http://www.publicdomainpictures.net/pictures/90000/velka/question-marks-background.jpg);
+  background-size: 700px;
+  border: 7px double black;
 }
 
 #nog_vragen {
@@ -246,7 +340,7 @@ header {
   font-family: 'Cagliostro', sans-serif;
   line-height: 1.5;
   margin: auto; 
-  margin-bottom: 200px;
+  margin-bottom: 250px;
   text-align: center;
 }
 
@@ -272,7 +366,7 @@ header {
 #footer_design {
   float: right;
   font-family: 'Cagliostro', 'sans-serif';
-  font-size: 18px;
+  font-size: 13px;
   margin-top: 50px;
   margin-bottom: 20px;
   text-align: right;  
@@ -280,7 +374,7 @@ header {
 
 #footer_location {
   font-family: 'Cagliostro', 'sans-serif';
-  font-size: 18px;
+  font-size: 13px;
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
@@ -289,7 +383,7 @@ header {
 #footer {
   color: #908F8F;
   font-family: 'Cagliostro', 'sans-serif';
-  font-size: 18px;
+  font-size: 13px;
   margin-top: 50px;
   margin-bottom: 20px;
   float: none;

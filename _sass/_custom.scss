@@ -7,6 +7,14 @@
       font-size: 3em;
       text-align: center;
     }
+
+    .weekdays li, .days li {
+      width: 12.5%;
+    }
+
+    .days li .active {
+      padding: 2px;
+    }
  }
  
  @media only screen and (max-width: 768px) {
@@ -14,6 +22,7 @@
     font-size: 13px;
     padding: 8px 16px;
   }
+
   #logo {
     font-size: 3em;
     text-align: center;
@@ -30,8 +39,13 @@
   #footer {
     font-size: 8px;
   }
+
   #icon_location {
     width: 15%;
+  }
+
+  .weekdays li, .days li {
+    width: 13.1%;
   }
  }
  
