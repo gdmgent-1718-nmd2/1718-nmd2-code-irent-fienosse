@@ -1,6 +1,16 @@
-<footer class="footer navbar navbar-light bg-light">
-{%- if site.show-style-guide %}
-    <a href="{{ site.baseurl }}{% link pages/disclaimer.html %}" class="footer">Disclaimer</a> 
-    <a href="{{ site.baseurl }}{% link pages/voorwaarden.html %}" class="footer">Voorwaarden</a>
-{%- endif %}
+<footer class="bd-footer navbar-light bg-light text-muted">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 text_footer">
+                <a href="{{ site.baseurl }}{% link pages/disclaimer.html %}" class="footer">Disclaimer</a>
+                <br>
+                <a href="{{ site.baseurl }}{% link pages/voorwaarden.html %}" class="footer">Voorwaarden</a>
+            </div>
+            <div class="col-6">
+                <p class="text_footer">Designed and built <br>by
+                    <a href="https://facebook.com/fienosselaer" target="_blank" rel="noopener">Fien Osselaer
+                </p>
+            </div>
+        </div>
+    </div>
 </footer>

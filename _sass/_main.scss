@@ -45,10 +45,9 @@ header {
 
 #logo {
   font-family: 'League Script', 'sans-serif';
-  padding-bottom: 20px;
   border-bottom: thick;
   margin: 50px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 /* homepagina */
@@ -99,6 +98,11 @@ header {
   font-size: 20px;
   padding: 16px 32px;
   border-radius: 2px;
+}
+
+.text:hover {
+  color: #908F8F;
+  text-decoration: none;
 }
 
 /* home afbeelding kalender */
@@ -184,6 +188,7 @@ header {
   font-family: 'League Script', 'sans-serif';
   margin-bottom: 20px;
   color: #908F8F;
+  text-align: center;
 }
 
 #yentl {
@@ -264,12 +269,20 @@ header {
 
 /* footer */
 
+.text_footer {
+  float: right;
+  font-family: 'Cagliostro', 'sans-serif';
+  padding: 40px;
+}
+
 .footer {
   color: #908F8F;
   font-family: 'Cagliostro', 'sans-serif';
   font-size: 18px;
+  float: none;
 }
 
 .footer:hover {
   color: #070303;
+  text-decoration: none;
 }
