@@ -1,0 +1,21 @@
+@import
+  "bootstrap-variables",                  // See _bootstrap-variables.scss
+  "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+  @media only screen and (max-width: 576px) {
+    .text {
+      font-size: 10px;
+      padding: 8px 16px;
+    }
+ }
+ 
+ @media only screen and (min-width: 768px) {
+ }
+ 
+ @media only screen and (min-width: 992px) {
+ 
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+ 
+ }
