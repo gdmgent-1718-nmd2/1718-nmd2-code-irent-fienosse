@@ -52,6 +52,10 @@ header {
 
 /* homepagina */
 
+p {
+  margin-bottom: none;
+}
+
 .homepage {
   text-align: center;
 }
@@ -95,13 +99,13 @@ header {
   background-color: #9AD3CC;
   color: white;
   font-family: 'Cagliostro', 'sans-serif';
-  font-size: 20px;
+  font-size: 18px;
   padding: 16px 32px;
   border-radius: 2px;
 }
 
 .text:hover {
-  color: #908F8F;
+  color: #F5F5F5;
   text-decoration: none;
 }
 
@@ -114,6 +118,7 @@ header {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  border: 10px double #F5F5F5;
 }
 
 .middle_kalender {
@@ -138,11 +143,12 @@ header {
 
 .home_ontbijt {
   margin: 0;
-  width: 95%;
+  width: 100%;
   display: block;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  border: 10px double #F5F5F5;
 }
 
 .middle_ontbijt {
@@ -218,6 +224,14 @@ header {
   font-family: 'Cagliostro', 'sans-serif';
   color: #908F8F;
   text-align: center;
+}
+
+/* pagina extra opties */
+
+.icon_EO {
+  width: 50%;
+  align-self: center;
+  margin-bottom: 50px;
 }
 
 /* pagina reserveren */
