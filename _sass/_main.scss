@@ -229,13 +229,18 @@ p {
 /* pagina extra opties */
 
 .icon_EO {
-  width: 50%;
+  width: 20%;
   align-self: center;
   margin-bottom: 50px;
+  color: #908F8F;
 }
 
 #text_EO {
   margin-bottom: 70px;
+}
+
+.subtitle_EO {
+  font-size: 1.3em;
 }
 
 /* pagina reserveren */
@@ -340,12 +345,15 @@ body {font-family: Verdana, sans-serif;}
   color: white;
   font-family: 'Cagliostro', sans-serif;
   line-height: 1.5;
-  margin-top: 70px;
-  margin-bottom: 100px;
   text-align: center;
   background-image: url(http://www.publicdomainpictures.net/pictures/90000/velka/question-marks-background.jpg);
   background-size: 700px;
   border: 7px double black;
+}
+
+#contact_pagina {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #nog_vragen {
@@ -361,8 +369,8 @@ body {font-family: Verdana, sans-serif;}
   color: white;
   font-family: 'Cagliostro', sans-serif;
   line-height: 1.5;
-  margin: auto; 
-  margin-bottom: 250px;
+  margin-top: 130px;
+  margin-left: 40px;
   text-align: center;
 }
 
