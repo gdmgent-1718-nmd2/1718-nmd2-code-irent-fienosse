@@ -1,0 +1,41 @@
+nav {
+    width: 100%;
+}
+  
+.nav-link {
+    color: #908F8F;
+    font-family: 'Cagliostro', 'sans-serif';
+    font-size: 18px;
+    margin-right: 40px;
+}
+  
+.nav-link:hover {
+    color: #070303;
+}
+
+.navbar {
+    border-bottom: 1px solid black;
+}
+
+#facebook {
+    width: 20px;
+  }
+  
+  #instagram {
+    width: 17px;
+  }
+  
+  #twitter {
+    width: 20px;
+  }
+  
+  .icons {
+    float: right;
+  }
+  
+  #logo {
+    font-family: 'League Script', 'sans-serif';
+    border-bottom: thick;
+    margin: 50px;
+    margin-bottom: 0px;
+  }

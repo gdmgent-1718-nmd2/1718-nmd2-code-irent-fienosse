@@ -1,6 +1,398 @@
-@import
-  "bootstrap-variables",                  // See _bootstrap-variables.scss
-  "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+/* homepagina */
+
+p {
+  margin-bottom: none;
+}
+
+.homepage {
+  text-align: center;
+}
+
+.normal_text_home {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+  text-align: center;
+}
+
+/* home afbeelding bed */
+
+.contain {
+  position: relative;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.home_bed {
+  margin: 0;
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle_bed {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.contain:hover .home_bed {
+  opacity: 0.3;
+}
+
+.contain:hover .middle_bed {
+  opacity: 1;
+}
+
+.text {
+  background-color: #9AD3CC;
+  color: white;
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 18px;
+  padding: 16px 32px;
+  border-radius: 2px;
+}
+
+.text a:hover {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+/* home afbeelding kalender */
+
+.home_kalender {
+  margin: 0;
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 10px double #F5F5F5;
+}
+
+.middle_kalender {
+  transition: .3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.contain:hover .home_kalender {
+  opacity: 0.3;
+}
+
+.contain:hover .middle_kalender {
+  opacity: 1;
+}
+
+/* home afbeelding ontbijt */
+
+.home_ontbijt {
+  margin: 0;
+  width: 100%;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 10px double #F5F5F5;
+}
+
+.middle_ontbijt {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.contain:hover .home_ontbijt {
+  opacity: 0.3;
+}
+
+.contain:hover .middle_ontbijt {
+  opacity: 1;
+}
+
+/* Over ons pagina */
+
+.normal_text {
+  margin-top: 40px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+}
+
+.normal_img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.img_text {
+  margin-bottom: 70px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+  text-align: center;
+}
+
+.maintitle {
+  font-size: 3em;
+  font-family: 'League Script', 'sans-serif';
+  margin-bottom: 20px;
+  color: #908F8F;
+  text-align: center;
+}
+
+#yentl {
+  border-radius: 1px;
+  width: 100%;
+}
+
+#fien {
+  width: 100%;
+}
+
+/* pagina kamer */
+
+.normal_text_kamer {
+  margin-top: 40px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+  text-align: center;
+}
+
+.appartement_img {
+  width: 100%;
+}
+
+.img_text_kamer {
+  margin-bottom: 40px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+  text-align: center;
+}
+
+/* pagina extra opties */
+
+.icon_EO {
+  width: 20%;
+  align-self: center;
+  margin-bottom: 50px;
+  color: #908F8F;
+}
+
+#text_EO {
+  margin-bottom: 70px;
+}
+
+.subtitle_EO {
+  font-size: 1.3em;
+}
+
+.icon_SC {
+  width: 10%;
+  margin-top: 10px;
+}
+
+/* pagina reserveren */
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #9AD3CC;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #9AD3CC;
+    color: white !important
+}
+
+.reserveren {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+#text_reserveren {
+  text-align: center;
+  color: #908F8F;
+  font-family: 'Cagliostro', sans-serif;
+  margin-bottom: 40px;
+}
+
+#balk_gereserveerd {
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+  background: #9AD3CC;
+  font-family: 'Cagliostro', sans-serif;
+  padding: 80px 50px;
+}
+
+#balk_text_reserveren {
+  margin-top: 40px;
+}
+
+/* pagina contact */
+
+#contact_layout {
+  padding: 50px 50px;
+  color: white;
+  font-family: 'Cagliostro', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  background-image: url(http://www.publicdomainpictures.net/pictures/90000/velka/question-marks-background.jpg);
+  background-size: 700px;
+  border: 7px double black;
+}
+
+#contact_pagina {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#nog_vragen {
+  color:#9AD3CC;
+  font-family: 'Cagliostro', sans-serif;
+  margin-top:20px;
+}
+
+#bellen {
+  background-color: #9AD3CC;
+  border-radius: 10px;
+  padding: 30px 30px;
+  color: white;
+  font-family: 'Cagliostro', sans-serif;
+  line-height: 1.5;
+  margin-top: 130px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+/* disclaimer */
+
+#normal_text_disclaimer {
+  margin-bottom: 70px;
+  margin-top: 40px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+}
+
+/* voorwaarden */
+
+
+
+/* footer */
+
+#footer_design {
+  float: right;
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 13px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: right;  
+}
+
+#footer_design a:hover {
+  text-decoration: none;
+  color: #070303
+}
+
+#footer_location {
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 13px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#footer {
+  color: #908F8F;
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 13px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  float: none;
+}
+#footer a {
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #070303;
+}
+
+#icon_location {
+  width: 8%;
+}
+
 
   @media only screen and (max-width: 576px) {
     #logo {
@@ -60,6 +452,10 @@
     width: 150%;
   }
  }
+
+
+
+
  
  @media only screen and (min-width: 992px) {
   .icon_EO {
