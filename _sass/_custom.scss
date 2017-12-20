@@ -129,9 +129,14 @@ p {
 /* Over ons pagina */
 
 .normal_text {
-  margin-top: 40px;
   font-family: 'Cagliostro', 'sans-serif';
   color: #908F8F;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
 }
 
 .normal_img {
@@ -152,6 +157,7 @@ p {
   margin-bottom: 20px;
   color: #908F8F;
   text-align: center;
+  margin-top: 60px;
 }
 
 #yentl {
@@ -166,7 +172,6 @@ p {
 /* pagina kamer */
 
 .normal_text_kamer {
-  margin-top: 40px;
   font-family: 'Cagliostro', 'sans-serif';
   color: #908F8F;
   text-align: center;
@@ -293,7 +298,7 @@ body {font-family: Verdana, sans-serif;}
   color: white;
   background: #9AD3CC;
   font-family: 'Cagliostro', sans-serif;
-  padding: 80px 50px;
+  padding: 70px 50px;
 }
 
 #balk_text_reserveren {
@@ -340,14 +345,17 @@ body {font-family: Verdana, sans-serif;}
 
 #normal_text_disclaimer {
   margin-bottom: 70px;
-  margin-top: 40px;
   font-family: 'Cagliostro', 'sans-serif';
   color: #908F8F;
 }
 
 /* voorwaarden */
 
-
+#normal_text_voorwaarden {
+  margin-bottom: 70px;
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+}
 
 /* footer */
 
