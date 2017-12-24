@@ -450,7 +450,7 @@ ul {list-style-type: none;}
   padding-left: 35px;
   margin-bottom: 10px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: 'Cagliostro', sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -524,11 +524,17 @@ ul {list-style-type: none;}
   font-family: 'Cagliostro', 'sans-serif';
   font-size: 1.1em;
   margin-top: 50px;
+  color: #908F8F;
 }
 
 #balk1 {
   width: 100%;
   margin-bottom: 30px;
+}
+
+.gegevens {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .buttons_winkelkar {
@@ -699,6 +705,10 @@ ul {list-style-type: none;}
 
   .popup{
     width: 70%;
+  }
+
+  .icon_winkelkar {
+    width: 60%;
   }
  }
  
