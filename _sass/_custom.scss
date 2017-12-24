@@ -214,13 +214,13 @@ p {
 
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
 
 .month {
     padding: 70px 25px;
     width: 100%;
     background: #9AD3CC;
     text-align: center;
+    font-family: 'Cagliostro', 'sans-serif';
 }
 
 .month ul {
@@ -249,6 +249,7 @@ body {font-family: Verdana, sans-serif;}
     margin: 0;
     padding: 10px 0;
     background-color: #ddd;
+    font-family: 'Cagliostro', 'sans-serif';
 }
 
 .weekdays li {
@@ -259,9 +260,10 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .days {
-    padding: 10px 0;
+    padding: 20px 0;
     background: #eee;
     margin: 0;
+    font-family: 'Cagliostro', 'sans-serif';
 }
 
 .days li {
@@ -278,6 +280,97 @@ body {font-family: Verdana, sans-serif;}
     padding: 5px;
     background: #9AD3CC;
     color: white !important
+}
+
+.box {
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: #908F8F;
+  text-decoration: none;
+}
+
+.button_2 {
+  font-size: 1em;
+  padding: 8px;
+  border: 2px solid #908F8F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button_2:hover {
+  color: #070303;
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'League Script', 'sans-serif';
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #908F8F;
+}
+
+.popup .close:hover {
+  color: white;
+}
+
+.popup .content {
+  max-height: 30%;
+  font-size: 1.1em;
 }
 
 .reserveren {
@@ -298,7 +391,7 @@ body {font-family: Verdana, sans-serif;}
   color: white;
   background: #9AD3CC;
   font-family: 'Cagliostro', sans-serif;
-  padding: 70px 50px;
+  padding: 80px 50px;
 }
 
 #balk_text_reserveren {
@@ -339,6 +432,124 @@ body {font-family: Verdana, sans-serif;}
   margin-top: 130px;
   margin-left: 40px;
   text-align: center;
+}
+
+/* pagina winkelkar */
+
+/* checkbox */
+
+.titel_winkelkar {
+  font-family: 'League Script', 'sans-serif';
+  font-size: 1.6em;
+}
+
+/* The container */
+.container_checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Cagliostro', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container_checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container_checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_checkbox input:checked ~ .checkmark {
+  background-color: #9AD3CC;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container_checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.icon_winkelkar {
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+/* progress bar */
+
+.progress-bar {
+  background-color: #9AD3CC;
+}
+
+.date_page {
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 1.1em;
+  margin-top: 50px;
+}
+
+#balk1 {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.buttons_winkelkar {
+	display: block;
+	width: 100%;
+  margin-top: 65px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: 'Cagliostro', sans-serif;
+}
+.buttons_winkelkar a {
+	text-decoration: none;
+	background-color: #908F8F;	
+	padding: 8px 25px;
+	color: #ffffff;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+}
+.buttons_winkelkar a:hover {
+	background-color: #cfcfcf;
 }
 
 /* disclaimer */
@@ -385,10 +596,11 @@ body {font-family: Verdana, sans-serif;}
   color: #908F8F;
   font-family: 'Cagliostro', 'sans-serif';
   font-size: 13px;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 20px;
   float: none;
 }
+
 #footer a {
   text-decoration: none;
 }
@@ -399,6 +611,27 @@ body {font-family: Verdana, sans-serif;}
 
 #icon_location {
   width: 8%;
+}
+
+#facebook {
+  width: 20px;
+}
+
+#instagram {
+  width: 17px;
+}
+
+#twitter {
+  width: 20px;
+}
+
+
+
+#logo {
+  font-family: 'League Script', 'sans-serif';
+  border-bottom: thick;
+  margin: 50px;
+  margin-bottom: 0px;
 }
 
 
@@ -459,11 +692,15 @@ body {font-family: Verdana, sans-serif;}
   .home_bed {
     width: 150%;
   }
+
+  .box{
+    width: 70%;
+  }
+
+  .popup{
+    width: 70%;
+  }
  }
-
-
-
-
  
  @media only screen and (min-width: 992px) {
   .icon_EO {
