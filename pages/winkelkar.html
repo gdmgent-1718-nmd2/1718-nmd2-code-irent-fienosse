@@ -15,16 +15,16 @@ title: De Kotmadam
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-lg-3" align="center">
+        <div class="col-3" align="center">
             <img class="icon_winkelkar" src="{{ 'assets/images/icon_date.png' | relative_url }}">
         </div>
-        <div class="col-xs-12 col-lg-3" align="center">
+        <div class="col-3" align="center">
             <img class="icon_winkelkar" src="{{ 'assets/images/icon_user.png' | relative_url }}">
         </div>
-        <div class="col-xs-12 col-lg-3" align="center">
+        <div class="col-3" align="center">
             <img class="icon_winkelkar" src="{{ 'assets/images/icon_money.png' | relative_url }}">
         </div>
-        <div class="col-xs-12 col-lg-3" align="center">
+        <div class="col-3" align="center">
             <img class="icon_winkelkar" src="{{ 'assets/images/icon_done.png' | relative_url }}">
         </div>
     </div>
@@ -43,6 +43,9 @@ title: De Kotmadam
 
 <div class="container">
         <div class="row justify-content-md-center date_page">
+            <div class="col-12 titel_winkelkar">
+                Kies je datum
+            </div>
             <div class="col-xs-12 col-lg-7">
                     <label for="balk1">Selecteer dag</label>
                     <select class="form-control" id="balk1">
@@ -97,16 +100,26 @@ title: De Kotmadam
                     </select>
                 </div>
             <div class="col-xs-12 col-lg-7 checkbox">
-                <h3 class="titel_winkelkar">Extra opties</h3>
+                <div class="titel_winkelkar">
+                    Extra opties
+                </div>
                 <label class="container_checkbox">Ontbijt (€7)
                     <input type="checkbox" checked="checked">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container_checkbox">Lunch: broodje kaas of smos (€3)
+                <label class="container_checkbox">Lunch: broodje kaas (€3)
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container_checkbox">Lunch: quinoasalade of spaghetti bolognaise (€8)
+                <label class="container_checkbox">Lunch: broodje smos (€3)
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container_checkbox">Lunch: quinoasalade (€8)
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container_checkbox">Lunch: spaghetti bolognaise (€8)
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
@@ -117,13 +130,6 @@ title: De Kotmadam
             </div>
         </div>
     </div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-8">
-        </div>
-    </div>
-</div>
 
 <div class="buttons_winkelkar">
     <a href="winkelkar_user.html" id="next">Verder &#10095;</a>	

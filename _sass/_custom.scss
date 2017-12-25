@@ -208,6 +208,7 @@ p {
 .icon_SC {
   width: 10%;
   margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 /* pagina reserveren */
@@ -435,12 +436,12 @@ ul {list-style-type: none;}
 }
 
 /* pagina winkelkar */
-
 /* checkbox */
 
 .titel_winkelkar {
   font-family: 'League Script', 'sans-serif';
   font-size: 1.6em;
+  text-align: center;
 }
 
 /* The container */
@@ -527,6 +528,13 @@ ul {list-style-type: none;}
   color: #908F8F;
 }
 
+.user_page {
+  font-family: 'Cagliostro', 'sans-serif';
+  font-size: 1.1em;
+  margin-top: 20px;
+  color: #908F8F;
+}
+
 #balk1 {
   width: 100%;
   margin-bottom: 30px;
@@ -556,6 +564,30 @@ ul {list-style-type: none;}
 }
 .buttons_winkelkar a:hover {
 	background-color: #cfcfcf;
+}
+
+/* winkelkar compleet */
+
+.text_bestelling {
+  font-family: 'Cagliostro', 'sans-serif';
+  color: #908F8F;
+  border-bottom: 2px solid #908F8F;
+  margin-top: 20px;
+}
+
+.bestelling_rechts {
+  float: right;
+}
+
+.bestelling_totaal {
+  margin-top: 20px;
+}
+
+#titel_winkelkar_bestelling {
+  margin-bottom: 30px;
+  font-family: 'League Script', 'sans-serif';
+  font-size: 1.6em;
+  text-align: center;
 }
 
 /* disclaimer */
@@ -631,32 +663,22 @@ ul {list-style-type: none;}
   width: 20px;
 }
 
+@media only screen and (max-width: 576px) {
+  #logo {
+    font-size: 3em;
+    text-align: center;
+  }
 
+  .weekdays li, .days li {
+    width: 12.5%;
+  }
 
-#logo {
-  font-family: 'League Script', 'sans-serif';
-  border-bottom: thick;
-  margin: 50px;
-  margin-bottom: 0px;
+  .days li .active {
+    padding: 2px;
+  }
 }
-
-
-  @media only screen and (max-width: 576px) {
-    #logo {
-      font-size: 3em;
-      text-align: center;
-    }
-
-    .weekdays li, .days li {
-      width: 12.5%;
-    }
-
-    .days li .active {
-      padding: 2px;
-    }
- }
  
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .text {
     font-size: 13px;
     padding: 8px 16px;
@@ -677,6 +699,7 @@ ul {list-style-type: none;}
 
   #footer {
     font-size: 8px;
+    margin-bottom: 13px;
   }
 
   #icon_location {
@@ -695,10 +718,6 @@ ul {list-style-type: none;}
     margin-left: 0px;
   }
 
-  .home_bed {
-    width: 150%;
-  }
-
   .box{
     width: 70%;
   }
@@ -710,14 +729,36 @@ ul {list-style-type: none;}
   .icon_winkelkar {
     width: 60%;
   }
- }
+
+  #facebook {
+    width: 13px;
+  }
+  
+  #instagram {
+    width: 10px;
+  }
+  
+  #twitter {
+    width: 13px;
+  }
+  .icons {
+    margin-top: 0px;
+  }
+  .normal_text {
+    font-family: 'Cagliostro', 'sans-serif';
+    color: #908F8F;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }
+}
  
- @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .icon_EO {
     width: 30%;
   }
- }
+}
  
- @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
  
- }
+}
