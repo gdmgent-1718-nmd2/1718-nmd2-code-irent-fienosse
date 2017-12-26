@@ -458,7 +458,8 @@ ul {list-style-type: none;}
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 15px;
   cursor: pointer;
   font-size: 0.9em;
   font-family: 'Cagliostro', sans-serif;
@@ -573,6 +574,18 @@ ul {list-style-type: none;}
 }
 .buttons_winkelkar a:hover {
 	background-color: #cfcfcf;
+}
+
+.img_betalen {
+  width: 50px;
+  margin-left: 20px;
+  float: right;
+}
+
+.img_betalen_groot {
+  width: 40px;
+  margin-left: 20px;
+  float: right;
 }
 
 /* winkelkar compleet */
